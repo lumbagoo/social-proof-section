@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+}
+
+.wrapper {
+  margin: 0 auto;
+  margin-top: 2em;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.intro {
+  background: no-repeat url("../img/bg-pattern-top-desktop.svg");
+}
+.intro .box-one__title {
+  padding: 1em 0;
+  font-size: 3.6rem;
+  text-align: center;
+  color: hsl(300, 43%, 22%);
+}
+.intro .box-one__text {
+  margin-bottom: 2em;
+  font-size: 1.5rem;
+  opacity: 0.8;
+  line-height: 1.5em;
+}
+.intro .box-two__review {
+  margin-bottom: 2em;
+  padding: 1em 0;
+  background-color: hsl(300, 24%, 96%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+}
+.intro .box-two__review .text {
+  margin-top: 0.5em;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.reviews {
+  background: url("../img/bg-pattern-bottom-desktop.svg");
+}
+.reviews .reviews-box {
+  margin-bottom: 2em;
+  padding: 3em;
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 7px;
+}
+.reviews .reviews-box__person {
+  display: flex;
+  color: hsl(0, 0%, 100%);
+  align-items: center;
+}
+.reviews .reviews-box__person .profile-image img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+}
+.reviews .reviews-box__person .profile-details {
+  margin-left: 2em;
+  font-size: 1.2rem;
+}
+.reviews .reviews-box__person .profile-details .name {
+  margin-bottom: 0.4em;
+  font-weight: bold;
+}
+.reviews .reviews-box__person .profile-details .status {
+  opacity: 0.6;
+}
+.reviews .reviews-box__text {
+  font-size: 1.5rem;
+  color: hsl(0, 0%, 100%);
+  margin-top: 1em;
+  line-height: 1.4em;
+}
+
+@media (min-width: 1000px) {
+  .intro {
+    display: flex;
+    padding: 4em;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .intro .box-one {
+    width: 30%;
+  }
+  .intro .box-one__title {
+    font-size: 4.8rem;
+  }
+  .intro .box-one__text {
+    font-size: 1.8rem;
+  }
+  .intro .box-two {
+    padding: 2em;
+  }
+  .intro .box-two__review {
+    flex-direction: row;
+    padding: 1.5em 5em;
+  }
+  .intro .box-two__review .stars {
+    margin-right: 5em;
+  }
+  .intro .box-two__review .text {
+    font-size: 1.4rem;
+  }
+  .intro .box-two .two {
+    transform: translate(30px);
+  }
+  .intro .box-two .three {
+    transform: translate(60px);
+  }
+  .reviews {
+    display: flex;
+    margin-top: 10em;
+  }
+  .reviews .reviews-box {
+    margin-left: 3em;
+  }
+  .reviews .reviews-box__person .profile-details p {
+    font-size: 1.4rem;
+  }
+  .reviews .reviews-box__text {
+    font-size: 1.6rem;
+  }
+  .reviews .two {
+    transform: translate(0, 25px);
+  }
+  .reviews .three {
+    transform: translate(0, 50px);
+  }
+}/*# sourceMappingURL=main.css.map */

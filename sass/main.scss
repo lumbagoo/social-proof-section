@@ -1,0 +1,174 @@
+@use './colors.scss' as *;
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'League Spartan', sans-serif;
+	
+}
+
+.wrapper {
+	margin: 0 auto;
+	margin-top: 2em;
+	width: 80%;
+	max-width: 1200px;
+}
+
+.intro {
+	background: no-repeat url("../img/bg-pattern-top-desktop.svg");
+	
+	.box-one {
+		&__title {
+			padding: 1em 0;
+			font-size: 3.6rem;
+			text-align: center;
+			color: $very-dark-magneta;
+		}
+
+		&__text {
+			margin-bottom: 2em;
+			font-size: 1.5rem;
+			opacity: 0.8;
+			// text-align: center;
+			line-height: 1.5em;
+		}
+	}
+
+	.box-two {
+		&__review {
+			margin-bottom: 2em;
+			padding: 1em 0;
+			background-color: $light-grayish-magneta;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			border-radius: 5px;
+
+			.text {
+				margin-top: 0.5em;
+				font-weight: bold;
+				font-size: 1.2rem;
+			}
+		}
+	}
+}
+
+.reviews {
+	background: url("../img/bg-pattern-bottom-desktop.svg");
+	.reviews-box {
+		margin-bottom: 2em;
+		padding: 3em;
+		background-color: $very-dark-magneta;
+		border-radius: 7px;
+
+		&__person {
+			display: flex;
+			color: $white;
+			align-items: center;
+
+			.profile-image {
+				img {
+					width: 6rem;
+					height: 6rem;
+					border-radius: 50%;
+				}
+			}
+
+			.profile-details {
+				margin-left: 2em;
+				font-size: 1.2rem;
+
+				.name {
+					margin-bottom: 0.4em;
+					font-weight: bold;
+				}
+				.status {
+					opacity: 0.6;
+				}
+			}
+		}
+		&__text {
+			font-size: 1.5rem;
+			color: $white;
+			margin-top: 1em;
+			line-height: 1.4em;
+		}
+	}
+}
+
+@media (min-width: 1000px) {
+	.intro {
+		
+		display: flex;
+		padding: 4em;
+		align-items: center;
+		justify-content: space-between;
+
+		.box-one {
+			width: 30%;
+			&__title {
+				font-size: 4.8rem;
+			}
+			&__text {
+				font-size: 1.8rem;
+			}
+		}
+
+		.box-two {
+			padding: 2em;
+
+			&__review {
+				flex-direction: row;
+				padding: 1.5em 5em;
+				.stars{
+					margin-right: 5em;
+				}
+				.text{
+					font-size: 1.4rem;
+				}
+			}
+
+			.two{
+				transform: translate(30px);
+			}
+			.three{
+				transform: translate(60px);
+			}
+			
+		}
+	}
+
+	.reviews {
+		display: flex;
+		margin-top: 10em;
+		.reviews-box {
+			margin-left: 3em;
+
+			&__person{
+				.profile-details p{
+					font-size: 1.4rem;
+					
+				}
+			}
+			&__text{
+				font-size: 1.6rem;
+			}
+		}
+		
+		.two{
+			transform: translate(0, 25px);
+		}
+		.three{
+			transform: translate(0, 50px);
+		}
+	}
+}
